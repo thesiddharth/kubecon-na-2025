@@ -4,7 +4,7 @@ metadata:
   annotations:
     terasky.backstage.io/source-info: >-
       {"pushToGit":true,"gitBranch":"main","gitRepo":"github.com?owner=thesiddharth&repo=kubecon-na-2025","gitLayout":"cluster-scoped","basePath":"demo-cluster/backstack-demo/App"}
-    terasky.backstage.io/add-to-catalog: 'true'
+    terasky.backstage.io/add-to-catalog: "true"
     terasky.backstage.io/owner: group:default/guests
     terasky.backstage.io/system: backstack-demo
     terasky.backstage.io/source-file-url: >-
@@ -14,4 +14,5 @@ metadata:
 spec:
   image: nginx
   crossplane:
-    compositionUpdatePolicy: Automatic
+    compositionRef:
+      name: app-pythonic
